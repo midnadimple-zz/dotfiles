@@ -4,7 +4,7 @@ My (very basic) dotfiles. I use a bar-less workflow.
 
 # TODO
 
-[ ] Add workspace management to rofi
+[ ] Add workspace management to rofi  
 [ ] Figure out a systray solution
 
 # Dependencies
@@ -32,4 +32,4 @@ Then, reboot.
 
 # License
 
-See [LICENSE](/LICENSE) for the license text.
+See [LICENSE](LICENSE) for the license text.
