@@ -1,0 +1,40 @@
+# Apps
+
+super + shift + Return
+	alacritty
+
+super + ctrl + s
+	notify-sysinfo
+
+super + ctrl + w
+	notify-timeandweather
+
+super + p
+	rofi -show drun
+
+super + {j,k}
+	bspc node {newer,older} -f	 
+
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+super + shift + c
+	bspc node -c
+
+super + shift + q
+	bspc quit
+
+super + t
+	bspc desktop -l tiled
+
+super + m
+	bspc desktop -l monocle
+
+super + @space
+	bspc desktop -l next
+
+super + shift + @space
+	bspc node -t floating
+
+super + button2
+	bspc node -t tiled

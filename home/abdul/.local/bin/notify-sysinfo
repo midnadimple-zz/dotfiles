@@ -1,0 +1,14 @@
+#!/bin/sh
+
+TEMP=$(sensors | grep 'CPU:' | sed 's/CPU://g;s/\s//g')
+RAMUSED=$(free -m | awk 'FNR == 2 {print $3}')
+RAMTOTAL=$(free -m | awk 'FNR == 2 {print $2}')
+LOAD=$(top -bn1 | grep load | awk '{printf "%.2f", $(NF-2)}')
+
+notify-send -t 6000  \
+"SYS INFO
+------------------------
+CPU Temp: $TEMP
+RAM Usage: $RAMUSED/$RAMTOTAL (MB)
+Load: $LOAD"
+  

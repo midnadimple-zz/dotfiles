@@ -1,0 +1,16 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[sendemail]
+	smtpserver = smtp.migadu.com
+	smtpuser = abdul@midnadimple.com
+	smtpencryption = ssl
+	smtpserverport = 465
+[user]
+	email = "abdul@midnadimple.com"
+	name = "Abdul Raji"
+[init]
+	defaultBranch = master

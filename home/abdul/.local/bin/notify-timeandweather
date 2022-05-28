@@ -1,0 +1,11 @@
+#!/bin/sh
+
+WEATHER=$(curl -s 'https://wttr.in/%7BBirmingham,UK%7D?format=1')
+TIME=$(date '+%a %b %e %r')
+
+notify-send -t 4000 \
+"LOCALE
+--------------------
+TIME: $TIME
+WEATHER: $WEATHER"
+

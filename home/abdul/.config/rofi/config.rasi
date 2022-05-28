@@ -1,0 +1,7 @@
+configuration {
+	modi: "drun,emoji,powermenu:rofi-power-menu --no-symbols,window";
+	sidebar-mode: true;
+	show-icons: true;
+}
+
+@theme "onedark"
