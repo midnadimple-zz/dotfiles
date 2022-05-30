@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+if [ x"$@" != x"" ]
+then
+  bspc desktop -f "$@"
+  exit 0
+fi
+bspc query -D --names | sed 's/\s/, /g'
+
+

@@ -4,7 +4,7 @@ My (very basic) dotfiles. I use a bar-less workflow.
 
 # TODO
 
-[ ] Add workspace management to rofi  
+[x] Add workspace management to rofi  
 [ ] Figure out a systray solution
 
 # Dependencies
@@ -14,6 +14,7 @@ for usage:
 - bspwm
 - lightdm (and gtk-greeter)
 - rofi
+- btops
 - dunst
 - helix
 - alacritty

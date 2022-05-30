@@ -1,5 +1,5 @@
 configuration {
-	modi: "drun,emoji,powermenu:rofi-power-menu --no-symbols,window";
+	modi: "drun,powermenu:rofi-power-menu --no-symbols,desktops:rofi-desktops";
 	sidebar-mode: true;
 	show-icons: true;
 }

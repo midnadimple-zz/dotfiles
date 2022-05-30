@@ -12,11 +12,12 @@ compinit
 # End of lines added by compinstall
 
 fpath+=~/.zsh/pure
-path+=('~/.local/bin')
-path+=('/usr/sbin')
+GOPATH=~/go
+path+=~/.local/bin
+path+=/usr/sbin
+path+=$GOPATH/bin
 
 export PATH
-GOPATH=~/go
 . ~/.cargo/env
 
 autoload -U promptinit; promptinit

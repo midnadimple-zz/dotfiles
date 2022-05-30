@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PATH=$PATH:/home/abdul/.local/bin:/usr/sbin
+PATH=$PATH:/home/abdul/.local/bin:/usr/sbin:/home/abdul/go/bin
 . /home/abdul/.cargo/env
 
 bspc config remove_disabled_monitors true
@@ -25,6 +25,7 @@ pgrep -x picom    > /dev/null || picom -f -i 0.8 --vsync &
 pgrep -x dunst    > /dev/null || dunst &
 pgrep -x sxhkd    > /dev/null || sxhkd &
 pgrep -x xss-lock > /dev/null || xss-lock slock &
+pgrep -x btops    > /dev/null || btops &
 
 xidle -program slock -timeout 300 &
 xidle -program "systemctl suspend" -timeout 600 &

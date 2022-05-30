@@ -1,0 +1,7 @@
+remove-empty = true
+append-when-occupied = true
+renamers = ["client", "constant"]
+
+[names]
+constant = ""
+
